@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <title>Template</title>
+</head>
+<body>
+    <h1>This is the index in the Templates folder</h1>
+    <p>{{ insert }}</p>
+    <p class="image">
+        <img src="{% static 'img/flamenco.jpg' %}">
+    </p>
+</body>
+</html>

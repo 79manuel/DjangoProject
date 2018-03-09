@@ -1,0 +1,19 @@
+h1 {
+    color: red;
+}
+
+p {
+    font-size: x-large;
+}
+
+img {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.image {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
