@@ -17,3 +17,25 @@ img {
     margin: auto;
     text-align: center;
 }
+
+table {
+    text-align: center;
+}
+
+th {
+    background-color: antiquewhite;
+    font-weight: bold;
+}
+
+table, th, tr {
+    border: 2px solid lightgray;
+}
+
+.form {
+    width: 40%;
+    margin: auto;
+    border: 2px solid lightgray;
+    padding: 20px;
+    text-align: center;
+    background-color: antiquewhite;
+}
