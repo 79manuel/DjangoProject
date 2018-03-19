@@ -19,9 +19,10 @@ from django.conf.urls import include
 from manuelapp import views
 
 urlpatterns = [
+    url(r'^home/', include('manuelapp.urls')),
+    url(r'^admin/', admin.site.urls),
     url(r'^models', views.index_models, name='index_models'),
     url(r'^$', views.index_forms, name='index_forms'),
     url(r'^form/', views.ManuelForm, name='ManuelForm'),
-    url(r'^home/', include('manuelapp.urls')),
-    url(r'^admin/', admin.site.urls),
+
 ]

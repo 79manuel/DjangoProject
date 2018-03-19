@@ -21,4 +21,14 @@ def index_forms(request):
 def ManuelForm(request):
     form = forms.FormName()
 
+    if request.method == 'POST':
+        form = forms.FormName(request.POST)
+
+        if form.is_valid():
+            print('Validation Success')
+            print('Name :' + form.cleaned_data['name'])
+            print('Email: ' + form.cleaned_data['email'])
+            print('Text: ' + form.cleaned_data['text'])
+
     return render(request, 'manuelapp/form.html', {'form': form})
+

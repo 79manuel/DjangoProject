@@ -44,7 +44,7 @@ def populate(N=5):
 
 if __name__ == '__main__':
     print('populating script!')
-    populate(20)
+    populate(30)
     print('populating complete!')
 
 
